@@ -1,0 +1,196 @@
+<html>
+  <head>
+    <title> BANK LAYOUT CREATION </title> <!-- this is title -->
+ <script src="https://kit.fontawesome.com/2658d1f057.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+          margin:0;
+          padding:0;
+          font-family: American Typewriter, serif;
+          color:black;
+        }
+        header{
+          background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img4.jpg);
+          height: 100vh;
+          background-size:cover;
+          background-position: center;
+        }
+        ul{
+          float: right;
+          list-style: none;
+          margin-top: 25px;
+        }
+        ul li{
+          display: inline-block;
+        }
+        ul li a{
+          text-decoration: none;
+          color: #fff;
+          padding: 5px 20px;
+          border:1px solid #fff;
+          transition: 0.6s ease;
+        }
+        ul li a:hover{
+          background-color: #fff;
+          color: #000;
+        }
+        .logo img{
+          width:80px;
+          float: left;
+          height: auto;
+        }
+        main{
+          max-width: 1200px;
+          margin:auto;
+        }
+        .title {
+          position: absolute;
+          top: 30%;
+          left:50%;
+          transform: translate(-50%,-50%);
+        }
+        .title h1{
+          position: relative;
+          font-size: 3em;
+          letter-spacing: 15px;
+          color: #0e3742;
+          width: 100%;
+           text-align: center;
+          -webkit-box-reflect:below 1px linear-gradient(transparent,#0008);
+          line-height: 0.7em;
+          outline: none;
+          animation: animate 5s linear infinite;
+        }
+        @keyframes animate{
+          0%,18%,20%,50.1%,60.1%,80%,90.1%,92%{
+            color: #0e3742;
+            text-shadow: none;
+          }
+          18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+            color: #fff;
+            text-shadow: 0 0 10px #03bcf4,
+                         0 0 20px #03bcf4,
+                         0 0 40px #03bcf4,
+                         0 0 60px #03bcf4,
+                         0 0 80px #03bcf4,
+                         0 0 100px #03bcf4;
+          }
+        }
+        .button{
+          position: absolute;
+          top: 40%;
+          left:50%;
+          transform: translate(-50%,-50%);
+        }
+        .btn{
+          text-decoration: none;
+          color: #fff;
+          padding: 1px 10px;
+          border:1px solid black;
+          transition:  0.6s ease;
+        }
+        .btn:hover{
+          background-color: #fff;
+          color: #000;
+        } 
+        footer{
+          position:fixed;
+          bottom:0px;
+          width: 100%;
+          background:orange;
+          height: 25vh;
+        }
+        .main-content{
+          display: flex; 
+        }
+        .main-content .box{
+          flex-basis:50%;
+          padding: 10px 20px;
+        }
+        .box h2{
+          font-size: 1.125rem;
+          font-weight: 600;
+          text-transform: uppercase;
+         color: white;
+        }
+        .box .content{
+          margin:20px 0 0 0;
+        }
+        .lft .content p{
+          text-align: justify;
+        }
+        .left .content .social{
+        margin:20px 0 0 0;
+        }
+        .left .content .social a{
+          padding:0 2px;
+        }
+        .left .content .social a span{
+          height: 40px;
+          width: 40px;
+          background:white; 
+          line-height:40px;
+          text-align: center;
+          font-size: 18px;
+          border-radius:5px;
+          transition: .3s;
+        }
+          .left .content .social a span:hover{
+            background: #f12020;
+          }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="main">  <!-- This is main class -->
+        <div class="logo"> <!-- thi class contain logo information -->
+          <img src="rsl.jpg">
+          </div>
+          <ul> <!-- used to navigate another page-->
+            <li> <a href="#">Home </a> </li>
+            <li> <a href="#">About </a> </li>
+            <li> <a href="#">Contact</a></li>
+            <li> <a href="banking.html">Login </a></li> 
+          </ul>
+        </div>
+        <div class="title">
+          <h1> RSL BANKS </h1> <!-- this is heading -->
+        </div>
+        <div class="button">
+          <a href="#" class="btn">LEARN MORE</a>
+        </div>
+    </header>
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2> About us </h2>
+          <div class="content">
+            <p style="font-style: italic;">We are committed to serving our millions of retail, business, wealth management, payment, commercial and corporate, and investment services customers across the country and around the world as a trusted financial partner</p>
+            <div class="social">
+              <a href="#"><span class="fab fa-facebook-f"></span></a>
+              <a href="#"><span class="fab fa-twitter"></span></a>
+              <a href="#"><span class="fab fa-instagram"></span></a>
+              <a href="#"><span class="fab fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Address </h2>
+          <div class="content">
+            <div class="place">
+                <span class="fas fa-map-marker-alt"></span>
+                <span class="text"> Palakkad sulthanpett</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text"> 04922-564789</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text"> rsl@gmail.com</span>
+            </div>
+          </div>
+      </div>
+    </footer>
+  </body>
+</html>

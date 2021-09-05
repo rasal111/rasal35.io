@@ -1,0 +1,94 @@
+<html>
+  <head>
+     <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+                integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <script src="transaction.js"></script>
+      <style>
+          header{
+            background-color:black; 
+            height:90px;
+            width: auto;
+            text-align: center;
+            color:#fff;
+            font-style: italic;
+          }
+          body{ background-color:#b3db66;}
+
+          .menu
+          {
+          grid-area:menu;
+          text-align:left;
+          background:#00ffff;
+          }
+
+
+
+          grid-container{
+          display:grid;
+          grid-template-areas:
+          'menu main main main main main'
+          padding:10px;
+          }
+
+          .grid-container > div {
+             padding: 20px 0;
+            font-size: 15px;
+            font-weight: 700;
+
+          }
+
+          
+          
+          .menu{
+                dries-area:menu
+                width=60px;
+                float:left;
+                background: :black;
+                height:1000px;
+
+               
+                }
+          .menu a{
+                 
+                 color:red;
+                 display:block;
+                 text-declaration:none;
+                 padding: 22px;
+                  font-size: 20px;
+                  font-weight: 600;
+                  font-style: italic;
+                  font-family:serif;
+                }
+          .menu a:hover
+                {
+                   
+                   color:white;
+                }
+
+          .menu a.active
+               {
+                background-color:black;
+                color:white;
+               }
+      </style>
+  </head>  
+  <body> 
+    <header>
+      <h1> BANKING SOLUTIONS</h1><!--This is the heading of the content-->
+    </header>
+          <div class="grid-container"> <!--This is the main division section-->
+              <nav class="menu">
+                  <a href="index.html">Home</a> <!--Uer can navigate to Home page-->
+                  <a href="credit.html">Deposite</a> <!--Uer can navigate to Deposite page-->
+                  <a href="withdraw.html">Withdraw</a> <!--Uer can navigate to withdraw page-->
+                  <a href="#">Balance</a>
+                  <a href="#">Transfer</a>
+                  <a href="#">Manage account</a>
+                  <a href="banking.html">Logout</a> <!--Uer can navigate to Login page-->
+              </nav>
+          </div>
+  </body> 
+</html>

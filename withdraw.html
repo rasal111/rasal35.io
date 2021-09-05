@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	   <title></title> <!--Title section of webpage-->
+        	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+                    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="transaction.js"></script>
+            <style>
+                 *{
+                  margin:0;
+                  padding: 0;
+                  }
+                .container{
+            	widows: 100%;
+            	height: 100vh;
+            	font-family: sans-serif;
+            	background-image: url(wit.jpg);
+            	color:white;
+            	display: flex;
+            	align-items: center;
+            	justify-content: center;
+                }
+                .jumbotron{
+            	background-color: #ba4545;
+                }
+               .inputbox{
+            	width: 100%;
+            	background: transparent;
+            	border: 1px solid #fff;
+            	margin: 6px 0;
+            	height: 32px;
+            	border-radius: 20px;
+            	padding: 0 10px;
+            	box-sizing: border-box;
+            	outline: none;
+            	text-align: center;
+            	color: #fff;
+               }
+        
+            </style>
+    </head>
+	<body>
+        <div class="container"> <!-- This section contains main class-->
+            <div class="jumbotron">
+                <h2>Welcome User</h2> <!--Heading of the page-->
+                <div class="row">
+                    <div class="col"><br>
+                        <h3>Withdraw</h3> <!--This is the heading section-->
+                        <table>
+                            <tr>
+                                <td>Accno</td>
+                                <td><input type="text" class="inputbox" id="wacno"></td> <!--account number of user-->
+                            </tr>
+                            <tr>
+                                <td>Pin</td>
+                                <td><input type="text" class="inputbox" id="wpin"></td> <!-- Pin number of user-->
+                            </tr>
+                            <tr>
+                                <td>Amount</td>
+                                <td><input type="text" class="inputbox" id="wamt"></td> <!--Amount want to withdraw-->
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button type="button" onclick="Bank.withdraw()" > Withdraw</button></td>
+                                
+                             
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
